@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon-cart.svg">
+    <link rel="stylesheet" href="image-avatar.png">
+    <link rel="stylesheet" href="logo.svg">
+    <link rel="stylesheet" href="image-product-1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display@400=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Ecommerce</title>
+</head>
+<body>
+  <header>
+        <nav>
+          <div class="container nav-container">
+            <span id="open-menu-btn"><i><img src="./images/icon-menu.svg" alt=""></i></span>
+            <span id="close-menu-btn"><i><img src="./images/icon-close.svg" alt="icon" ></i></span>
+            <img src="./images/logo.svg" alt="" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html">Collection</a></li>
+                <li><a href="index.html">Men</a></li>
+                <li><a href="index.html">Women</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            <img src="./images/icon-cart.svg" alt="" class="icon-cart">
+            <img src="./images/image-avatar.png" alt="" class="pic">
+          </div>
+        </nav>
+      </header>
+    
+    <main>
+        <div class="cart-container">
+            <p>Cart</p>
+            <hr>
+            <div class="cart-box">
+              <p >Your cart is empty</p>
+            </div>
+          </div>
+        <div class="light-box-container">
+            <div class="light-box">
+        </div>
+
+        <section class="flex">
+            <div class="images">
+              <div class="set">
+              <a href="#" class="icon-next" onclick="next1()">
+                <img src="./images/icon-next.svg" alt="icon-next" >
+              </a>
+
+      <a href="#" class="icon-prev" onclick="prev1()"
+        ><img src="./images/icon-previous.svg" alt="icon-previous"
+      />
+    </a>
+  </div>
+               <img onclick="toSlide(0); preview()" src="./images/image-product-1.jpg" alt="image" class="image1">
+               <div class="container-image-display">
+                <img onclick="toSlide(0); preview()"  src="./images/image-product-1-thumbnail.jpg" alt="" class="imgs-display">
+                <img onclick="toSlide(1); preview()" src="./images/image-product-2-thumbnail.jpg" alt="" class="imgs-display">
+                <img onclick="toSlide(2); preview()" src="./images/image-product-3-thumbnail.jpg" alt="" class="imgs-display">
+                <img onclick="toSlide(3); preview()" src="./images/image-product-4-thumbnail.jpg" alt="" class="imgs-display">
+               </div>
+ 
+               <div class="thumbnails">
+                <div class="icon-display">
+                <a href="#" class="icon-close">
+                  <img  class="closeicon" src="./images/icon-close.svg" alt="">
+                </a>
+
+                  <a href="#" class="icon-next" onclick="next()">
+                    <img src="./images/icon-next.svg" alt="icon-next" >
+                  </a>
+
+          <a href="#" class="icon-prev" onclick="prev()"
+            ><img src="./images/icon-previous.svg" alt="icon-previous"
+          />
+        </a>
+        </div>
+ 
+                <div class="popup">
+                <img  class="image2" src="./images/image-product-1.jpg"
+                  alt=""
+              />
+              <div class="display">
+                <a href="#"
+                ><img onclick="toSlide(0)" class="preview" 
+                  src="./images/image-product-1.jpg"
+                  alt="product1-thumbnail"
+              /></a>
+              <a href="#"
+                ><img onclick="toSlide(1)" class="preview"
+                  src="./images/image-product-2.jpg"
+                  alt="product2-thumbnail"
+              /></a>
+              <a href="#" 
+                ><img onclick="toSlide(2)" class="preview"
+                  src="./images/image-product-3.jpg"
+                  alt="product3-thumbnail"
+              /></a>
+              <a href="#"
+                ><img onclick="toSlide(3)" class="preview"
+                  src="./images/image-product-4.jpg"
+                  alt="product4-thumbnail"
+              /></a>
+              </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="content">
+              <strong class="company">SNEAKER COMPANY</strong> 
+              <h1 class="fall">
+                  Fall Limited Edition Sneakers
+              </h1>
+
+              <p class="para">
+                  These low-profile sneakers are your perfesct casual wear companion.
+                  Featuring a durable rubber outer sole, they'll withstand everything
+                      the weather can offer.
+              </p>
+              <div class="price">
+                <div class="curr-price">
+                  <h3>
+                    $125.00
+                </h3>
+                </div>
+                
+                <div>
+                  <strong class="percent">
+                    50%
+                  </strong>
+                </div>
+              </div>
+              <div class="cancel">
+                 <strong >$250.00</strong>
+                </div>
+              
+
+              <div class="cr">
+                <div class="rate">
+
+                  <div class="minus">
+                    <a href="###"><img  src="./images/icon-minus.svg" alt=""> </a>
+                  </div>
+
+                  <div class="Zero">
+                    <h3>0</h3>
+                  </div>
+                    
+                  <div class="plus">
+                    <a href="###"><img src="./images/icon-plus.svg" alt=""></a>
+                  </div>
+                  </div>
+
+                  <div class="cart">
+                    <div>
+                      <a href="#"><img src="./images/icon-cart.svg" alt="" class="icon-cart2"></a>
+                    </div>
+                    <div>
+                      <h3>Add to cart</h3>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+           
+      </section>
+    </div>
+  </div>        
+    </main>
+
+    <footer>
+        Challenge by <span class="red">Front-end Mentor</span>.coded by <span class="red">Amagrey</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
