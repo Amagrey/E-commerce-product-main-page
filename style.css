@@ -176,11 +176,11 @@ nav{
 }
 .image2{
     position: absolute;
-    margin-top: 4.4rem;
-    margin-left: 41rem;
     height: 19rem;
     border-radius: 10px;
     width: 18.4rem;
+    top: 35vh;
+    left: 42vw;
 }
 .image2:hover{
     opacity: none;
@@ -204,9 +204,12 @@ nav{
 
  .closeicon{
   position: absolute;
-  top: 12rem;
-  right: 39.5rem;
+  top: 33vh;
+  right: 37vw;
   cursor: pointer;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
   z-index: 100;
 }
 .closeicon:hover {
@@ -215,13 +218,17 @@ nav{
 .icon-display .icon-next{
   display: inline-block;
   position: absolute;
-  top: 23rem;
-  right: 38.5rem;
+  align-items: center;
+  justify-content: center;
+  place-self: center;
+  top: 25rem;
+  right: 37.5rem;
   z-index: 100;
   padding: 5px 10px;
   border-radius: 50%;
   background-color: var(--pale-orange);
 }
+
 .icon-display .icon-next img{
     width: 10px;
   height: 10px;
@@ -234,8 +241,11 @@ nav{
   .icon-display .icon-prev {
     display: inline-block;
     position: absolute;
-    top: 23rem;
-    left: 40rem;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    top: 25rem;
+    left: 41.5rem;
     z-index: 100;
     border-radius: 50%;
     background-color: white;
@@ -250,27 +260,31 @@ nav{
     width: 10px;
     height: 10px;
   }
-
-/* .icon-prev{
-    position: absolute;
-    top: 22.4rem; left: 40.4rem;
-    cursor: pointer;
-    z-index: 100;
-} */
+  @media screen and (max-width:1195px){
+    .icon-display .icon-next{
+      right: 24.9rem;
+    }
+    .icon-display .icon-prev {
+      left: 32.8rem;
+    }
+    .popup .display .preview {
+      right: 11rem;
+  
+    }
+  }
+  
 
  .popup .display .preview {
-    /* position: absolute;
-    top: 50%; left: 50%; */
+    position: relative;
     max-width: 100%;
     max-height: 100%;
     padding: 0;
     height: 3.2rem;
-    margin-top: 23rem;
-    margin-left: 0.5rem;
+    margin-top: 26rem;
+    margin-left: 0.9rem;
     object-fit: cover;
     transform: translate(70%, 40%);
     border-radius: 10px;
-    /* transform: translate(-50%, -50%); */
   }
 
  .thumbnails .popup .display img{
@@ -348,6 +362,7 @@ h1{
 .fall{
   margin-top: 1rem;
 }
+
 .f{
   margin-top: 1rem;
 }
@@ -392,6 +407,7 @@ h1{
 .cr{
   display: flex;
   gap: 1rem;
+  margin-top: 8rem;
 }
     
 .rate{
@@ -399,19 +415,14 @@ h1{
     background-color: hsl(223, 64%, 98%);
     text-align: center;
     align-items: center;
-    width: 27%;
+    width: 38%;
     height: 10%;
     padding: 0.6rem;
     border-radius: 0.5rem;
     gap: 3rem;
     align-items: center;
     justify-content: center;
-}
-.menu{
-  display: none;
-}
-.close{
-  display: none;
+    padding: 1rem;
 }
 .cart{
   display: flex;
@@ -421,12 +432,18 @@ h1{
     text-align: center;
     padding: 0.8rem;
     border-radius: 0.5rem;
-    width: 40%;
+    width: 48%;
     align-items: center;
     justify-content: center;
-    margin-left: 0.5rem;
     gap: 2rem;
 }
+.menu{
+  display: none;
+}
+.close{
+  display: none;
+}
+
 span:hover{
   border-color: var(--pale-orange);
 }
@@ -471,7 +488,7 @@ footer{
     font-size: 1.2rem;
   }
   nav{
-    position: fixed;
+
     background-color: var(--white);
   }
   
@@ -527,14 +544,14 @@ footer{
 .set .icon-next{
   display: inline-block;
   position: absolute;
-  margin-top: 2rem;
-  margin-right: -20rem;
-  top: 13rem;
-  right: 34rem;
+  align-items: center;
+  justify-content: center;
+  top: 19rem;
+  right: 10.5rem;
   z-index: 100;
-  padding: 5px 10px;
   border-radius: 50%;
   background-color: var(--pale-orange);
+  padding: 5px 10px;
 }
 .set .icon-next img{
     width: 10px;
@@ -548,9 +565,11 @@ footer{
   .set .icon-prev { 
     display: inline-block;
     position: absolute;
-    top: 14.4rem;
+    align-items: center;
+    text-align: center;
+    top: 19rem;
     left: 16rem;
-    z-index: 100;
+    z-index: 10;
     border-radius: 50%;
     background-color: white;
     padding: 5px 10px;
@@ -581,7 +600,7 @@ footer{
 }
 .content{
   width: 90%;
-  text-align: justify;
+  text-align: left;
  align-items: center;
  justify-content: center;
 }
@@ -597,13 +616,19 @@ footer{
 .cr{
   flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.cr .cart{
+   
 }
 footer{
   width: 100%;
 }
 
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:720px) {
   body{
     width: 100%;
   }
@@ -659,7 +684,7 @@ footer{
     /* box-shadow: .4rem 6rem 18rem rgba(0, 0, 0, 0.8); */
     position: fixed;
     top: 4rem;
-    left: 3%;
+    left: 0%;
     height: fit-content;
     width: 8rem;
     flex-direction: column;
@@ -669,7 +694,7 @@ footer{
 
   .nav-menu li{
     width: 100%;
-    height: 5.8rem;
+    height: 3.8rem;
   }
 
   .nav-menu li a {
@@ -686,6 +711,9 @@ footer{
   .nav-menu ul{
      width: 100%;
   }
+  .logo{
+    width: 8rem;
+  }
   .images .icon-next, .images .icon-prev{
     position: absolute;
     z-index: 11;
@@ -695,7 +723,7 @@ footer{
     margin-left: 10rem;
   }
   .image1{
-    width: 90vw;
+    width: calc(45vw - -50px);
     height: 50vh;
     margin: 0;
   }
@@ -713,9 +741,10 @@ footer{
   .cr .rate{
     margin-left: 1rem;
     margin-top: 2rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 65%;
     padding: 1rem;
   }
   .images .icon-next{
@@ -739,16 +768,14 @@ footer{
   .cr .cart{
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     padding: rem;
   }
   .set .icon-next{
     display: inline-block;
-    position: absolute;
-    margin-top: 2rem;
-    margin-right: -20rem;
-    top: 8rem;
-    right: 20.5rem;
+    position: relative;
+    top: 13rem;
+    right: -21.6rem;
     z-index: 100;
     padding: 5px 10px;
     border-radius: 50%;
@@ -766,8 +793,8 @@ footer{
     .set .icon-prev {
       display: inline-block;
       position: absolute;
-      top: 9rem;
-      left: 0.5rem;
+      top: 13rem;
+      left: 10.5rem;
       z-index: 100;
       border-radius: 50%;
       background-color: white;
@@ -785,11 +812,68 @@ footer{
 
   footer{
     margin-top: 8rem;
+    padding-left: 1rem;
     padding-block: 1rem;
     border-radius: 1rem 0.7rem 0rem 0rem;
     font-size: 0.8rem;
   }
 }
+   
+
+@media screen and (max-width:375px) {
+  .image1{
+    width: calc(85vw - -50px);
+    height: 50vh;
+    margin: 0;
+  }
+  .nav-menu li{
+    width: 100%;
+    height: 3.8rem;
+  }
   
+  .nav-menu{
+    display: none;
+    background-color: var(--white);
+    /* box-shadow: .4rem 6rem 18rem rgba(0, 0, 0, 0.8); */
+    position: fixed;
+    top: 3rem;
+    left: 0%;
+    height: fit-content;
+    width: 8rem;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  h2{
+    font: 0.5rem;
+  }
+  h3{
+   font-size: 0.8rem; 
+  }
+
+  p{
+    font-size: 0.1rem;
+  }
+
+  .logo{
+    width: 6rem;
+  }
+
+  .set .icon-prev{
+    left: 0.5rem;
+  }
+
+  .set .icon-next{
+    left: 20.5rem;
+  }
+
+  .cr .cart{
+    width: ;
+  }
+
+}
   
 
